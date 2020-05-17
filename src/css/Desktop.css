@@ -1,14 +1,20 @@
 .navbar {
   overflow: hidden;
-  background-color: #ffffff;
+  background-color: #e3e3e3;
   position: fixed;
   top: 0;
   text-align: left;
   height: 50px;
-  width: 100%;
+  width: 80%;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
   padding-left: 42px;
   padding-right: 42px;
   line-height: 50px;
+  border-style: solid;
+  border-width: 1px;
 }
 
 .navbar a {
@@ -22,7 +28,7 @@
 
 .navbar a:hover {
   background-color: #000000;
-  color: #ffffff;
+  color: #e3e3e3;
 }
 
 .header {
@@ -39,6 +45,32 @@
   border-color: #ffffff;
 }
 
+.links {
+  line-height: 50px;
+  text-align: center;
+  background: transparent;
+  padding-left: 42px;
+  padding-right: 42px;
+  height: 50px;
+  margin-top: 20px;
+  width: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.links a {
+  text-decoration: none;
+  color: #ffffff;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.links a:hover {
+  color: #000000;
+}
+
 .content0 {
   width: 80%;
   margin-left: auto;
@@ -53,10 +85,15 @@
 .content1 {
   text-align: left;
   /* background-color: #1c2244; */
-  background-color: #ffffff;
+  /* background-color: #1a1f1a; */
+  background-color: #e3e3e3;
   padding-left: 42px;
   padding-right: 42px;
-  height: 2000px;
+  height: 500px;
+  margin-top: 100px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .content2 {
@@ -69,8 +106,8 @@
 
 .parallax {
   text-align: center;
-  background-image: url("./bwall.jpg");
-  min-height: 500px; 
+  background-image: url("../res/bwall.jpg");
+  min-height: 4000px; 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

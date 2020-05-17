@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Desktop from './Desktop';
-import Mobile from './Mobile';
+import Desktop from './views/Desktop';
+import Mobile from './views/Mobile';
 
 class App extends Component {
   constructor() {
