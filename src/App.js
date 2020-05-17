@@ -1,26 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import Desktop from './Desktop';
+import Mobile from './Mobile';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      width: window.innerWidth,
+    };
+    this.handleWindowResize = this.handleWindowResize.bind(this);
+  }
+
+  componentWillMount() {
+    window.addEventListener('resize', this.handleWindowResize);
+  }
+
+  handleWindowResize() {
+    this.setState({ width: window.innerWidth });
+  }
+
+  render() {
+    const { width } = this.state;
+    const small = width <= 700;
+
+    if (small) {
+      return (
+        <Mobile />
+      );
+    } else {
+      return (
+        <Desktop />
+      )
+    }
+  }
 }
 
 export default App;
