@@ -9,9 +9,9 @@ class Desktop extends Component {
   render() {
     return (
       <div>
+        { /* eslint-disable-next-line */ }
+        <a name="home"/>
         <div class="parallax">
-          { /* eslint-disable-next-line */ }
-          <a name="home"/>
           <div class="navbar">
             Rory Dudley
             <a style={{ marginLeft: "20px" }} href="#home">Home</a>
