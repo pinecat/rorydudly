@@ -5,9 +5,11 @@ import '../css/Desktop.css';
 class Desktop extends Component {
   render() {
     return (
-      <div class="content">
-        <a href="https://github.com/pinecat" rel="noopener noreferrer" target="_blank"><i class="fab fa-github"></i></a>
-        Hello There.
+      <div>
+        <div class="sq1"></div>
+        <div class="sq2"></div>
+        <div class="intro1"></div>
+        <div class="intro2"></div>
       </div>
     );
   }
